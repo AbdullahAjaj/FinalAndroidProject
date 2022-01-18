@@ -13,10 +13,10 @@
         android:theme="@style/Theme.AndroidProject"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".CheckIn"
+            android:name=".coustomerHome"
             android:exported="true" />
         <activity
-            android:name=".roomdielis"
+            android:name=".CheckIn"
             android:exported="true" />
         <activity
             android:name=".addnewcustomer"

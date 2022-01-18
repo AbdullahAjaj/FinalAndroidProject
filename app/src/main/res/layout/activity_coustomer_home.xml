@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".coustomerHome">
 
     <ImageView
         android:layout_width="match_parent"
@@ -37,26 +37,17 @@
             />
         <Button
             style="@style/btnStyle"
-            android:text="Customer"
-            android:id="@+id/customer"
+            android:text="Check In"
+            android:id="@+id/checkIn"
+            android:onClick="viewRoom"
             />
         <Button
             style="@style/btnStyle"
-            android:text="Receptionist"
-            android:id="@+id/receptionist"
+            android:text="Check Out"
+            android:id="@+id/checkOut"
+            android:onClick="checkOutclick"
             />
 
-        <Button
-            style="@style/btnStyle"
-            android:text="recycler"
-            android:onClick="recy"
-            />
-
-        <Button
-            style="@style/btnStyle"
-            android:text="List"
-            android:onClick="recList"
-            />
 
 
     </LinearLayout>

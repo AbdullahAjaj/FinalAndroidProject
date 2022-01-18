@@ -87,27 +87,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
             //   Intent intent = new Intent(RecyclerAdapter.this,CustomerLogin.class);
         });*/
     }
-    /*
-    @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
-        final Pizza pizza = items.get(position);
-        CardView cardView = holder.cardView;
-        ImageView imageView = (ImageView) cardView.findViewById(R.id.image);
-        Glide.with(context).load(pizza.getImage()).into(imageView);
-        TextView txt = (TextView)cardView.findViewById(R.id.txtName);
-        txt.setText(pizza.getName());
-        cardView.setOnClickListener( new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                //
-            }
-        });
-    }
-     */
-
-
-
-
 
 
 

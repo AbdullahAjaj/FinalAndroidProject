@@ -20,7 +20,7 @@
     }
 
     
-    $sql = "insert into customer values($userName, $fullName, $phoneNum, null);";
+    $sql = "insert into customer(userName,fullName,phoneNum) values('$userName', '$fullName', '$phoneNum');";
     
     if($conn->query($sql)===TRUE){
         echo "Succ";

@@ -6,6 +6,7 @@ import androidx.core.content.ContextCompat;
 
 import android.Manifest;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -21,6 +22,8 @@ import java.net.*;
 public class CustomerLogin extends AppCompatActivity {
     Button login;
     EditText usernameEdt;
+    private SharedPreferences userNamePreferences;
+    private SharedPreferences.Editor userNamePrefsEditor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +33,8 @@ public class CustomerLogin extends AppCompatActivity {
     }
 
     private void logInCustmer() {
-        Intent intent =new Intent(CustomerLogin.this, CustomerRecycler.class);
+        Intent intent =new Intent(CustomerLogin.this, coustomerHome.class);
+       intent.putExtra("userName",usernameEdt.getText().toString());
         startActivity(intent);
     }
 

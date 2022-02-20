@@ -8,8 +8,7 @@
     tools:context=".ReceptionistAdd">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        style="@style/imgViewStyle"
         android:src="@drawable/reception3"
         />
 
@@ -31,7 +30,6 @@
             android:text="View room details"
             android:id="@+id/viewdeatils"
             />
-
 
     </LinearLayout>
 </FrameLayout>

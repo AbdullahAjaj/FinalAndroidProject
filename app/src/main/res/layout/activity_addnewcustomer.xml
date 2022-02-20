@@ -9,37 +9,39 @@
     android:orientation="vertical"
     >
 
-            <EditText
-                android:layout_width="300dp"
-                android:layout_height="60dp"
-                android:hint="User full name"
-                style="@style/edtStyle"
-                android:id="@+id/userfullname"
-                />
+    <TextView
+        style="@style/headTxtStyle"
+        android:text="Add New Customer"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        />
+
     <EditText
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:hint="User  name"
+        android:hint="Full name"
+        style="@style/edtStyle"
+        android:id="@+id/userfullname"
+        />
+
+    <EditText
+        android:hint="Username"
         style="@style/edtStyle"
         android:id="@+id/username"
         />
+
     <EditText
-        android:layout_width="300dp"
-        android:layout_height="60dp"
         android:hint="Phone number"
         style="@style/edtStyle"
         android:id="@+id/phonenumber"
         />
+
     <TextView
-        android:layout_width="300dp"
-        android:layout_height="60dp"
         android:hint="result"
-        style="@style/edtStyle"
+        style="@style/txtViewStyle"
         android:id="@+id/Result"
         />
+
     <Button
-        android:layout_width="300dp"
-        android:layout_height="60dp"
         android:text="Save"
         style="@style/btnStyle"
         android:id="@+id/savecustmer"

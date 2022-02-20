@@ -12,6 +12,7 @@
         android:supportsRtl="false"
         android:theme="@style/Theme.AndroidProject"
         android:usesCleartextTraffic="true">
+
         <activity
             android:name=".coustomerHome"
             android:exported="true" />
@@ -28,7 +29,7 @@
             android:name=".CustomerRecycler"
             android:exported="true" />
         <activity
-            android:name=".ReceptionistRecycler"
+            android:name=".ReceptionistListview"
             android:exported="true" />
         <activity
             android:name=".ReceptionistAdd"

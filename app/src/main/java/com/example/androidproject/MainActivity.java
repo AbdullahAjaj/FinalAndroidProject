@@ -40,15 +40,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-
-    public void recy(View view) {
-        Intent intent =new Intent(this, CustomerRecycler.class);
-        startActivity(intent);
-    }
-
-    public void recList(View view) {
-        Intent intent =new Intent(this, ReceptionistListview.class);
-        startActivity(intent);
-    }
 }

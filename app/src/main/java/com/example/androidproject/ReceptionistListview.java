@@ -19,16 +19,13 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-public class ReceptionistListview extends AppCompatActivity {
-    private static final String url = "http://192.168.1.115:80/mobileProject/getReceptionistList.php";
-    private ListView receptionistList;
+import java.util.ArrayList;
 
-    String tutorials[]
-            = { "Algorithms", "Data Structures",
-            "Languages", "Interview Corner",
-            "GATE", "ISRO CS",
-            "UGC NET CS", "CS Subjects",
-            "Web Technologies" };
+public class ReceptionistListview extends AppCompatActivity {
+    private static final String url = "http://192.168.1.11:80/mobileProject/getReceptionistList.php";
+    private ListView receptionistList;
+    private ArrayList<RoomReceptionist> rooms = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,14 +34,7 @@ public class ReceptionistListview extends AppCompatActivity {
 
         receptionistList = findViewById(R.id.receptionistList);
 
-        Intent intent = getIntent();
-
-        ArrayAdapter<String> arr;
-        arr = new ArrayAdapter<String>(
-                this,
-                R.layout.support_simple_spinner_dropdown_item,
-                tutorials);
-        receptionistList.setAdapter(arr);
+        loadRooms();
     }
 
     public  void loadRooms(){
@@ -61,14 +51,15 @@ public class ReceptionistListview extends AppCompatActivity {
                             int capacity = roomObject.getInt("capacity");
                             int priceByDay = roomObject.getInt("priceByDay");
                             String userName = roomObject.getString("userName");
-
                             RoomReceptionist room = new RoomReceptionist(id, capacity, priceByDay, userName);
+                            rooms.add(room);
 
                         }
                     }catch (Exception e){
-
+                        e.printStackTrace();
                     }
-
+                    ListAdapter listAdapter = new ListAdapter(rooms,ReceptionistListview.this,R.layout.activity_list_adapter);
+                    receptionistList.setAdapter(listAdapter);
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {

@@ -8,8 +8,7 @@
     tools:context=".LoginReceptionist">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        style="@style/imgViewStyle"
         android:src="@drawable/madeira_portugal"
         />
 
@@ -21,26 +20,17 @@
         android:padding="10dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_marginBottom="50dp"
-            android:fontFamily="@font/gist_light"
-            android:shadowColor="@color/black"
-            android:shadowDx="2"
-            android:shadowDy="2"
-            android:shadowRadius="0.9"
+            style="@style/headTxtStyle"
             android:text="Al-Ajaji Hotel"
-            android:textColor="@color/white"
-            android:textSize="45dp"
-            android:textStyle="bold|italic" />
+            />
 
         <EditText
             style="@style/edtStyle"
             android:id="@+id/username"
             android:alpha=".8"
             android:background="@color/design_default_color_background"
-            android:hint="username" />
+            android:hint="username"
+            />
 
         <EditText
             style="@style/edtStyle"
@@ -49,28 +39,17 @@
             android:background="@color/design_default_color_background"
             android:hint="Password"
             android:inputType="textPassword"
-
             />
 
         <CheckBox
+            style="@style/checkBoxStyle"
             android:id="@+id/saveLoginCheckBox"
-            android:layout_width="165dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:text="Remindar me"
-            android:fontFamily="@font/gist_light"
-            android:background="@color/cardview_light_background"
-
             />
 
         <Button
+            style="@style/btnStyle"
             android:id="@+id/loginbutton"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:alpha=".8"
-            android:padding="15dp"
             android:text="login"
             android:onClick="btnLoginClick"
             />

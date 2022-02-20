@@ -23,7 +23,7 @@ public class ReceptionistAdd extends AppCompatActivity {
         viewdeatils.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(ReceptionistAdd.this, roomdielis.class);
+                Intent intent =new Intent(ReceptionistAdd.this, ReceptionistListview.class);
                 startActivity(intent);
             }
         });

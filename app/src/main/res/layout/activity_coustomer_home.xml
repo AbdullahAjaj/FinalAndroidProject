@@ -8,8 +8,7 @@
     tools:context=".coustomerHome">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        style="@style/imgViewStyle"
         android:src="@drawable/madeira_portugal"
         />
 
@@ -21,34 +20,23 @@
         android:padding="10dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/headTxtStyle"
             android:text="Al-Ajaji Hotel"
-            android:layout_marginBottom="50dp"
-            android:textSize="45dp"
-            android:fontFamily="@font/gist_light"
-            android:layout_margin="10dp"
-            android:textStyle="bold|italic"
-            android:textColor="@color/white"
-            android:shadowDx="2"
-            android:shadowDy="2"
-            android:shadowColor="@color/black"
-            android:shadowRadius="0.9"
             />
+
         <Button
             style="@style/btnStyle"
             android:text="Check In"
             android:id="@+id/checkIn"
             android:onClick="viewRoom"
             />
+
         <Button
             style="@style/btnStyle"
             android:text="Check Out"
             android:id="@+id/checkOut"
             android:onClick="checkOutclick"
             />
-
-
 
     </LinearLayout>
 </FrameLayout>

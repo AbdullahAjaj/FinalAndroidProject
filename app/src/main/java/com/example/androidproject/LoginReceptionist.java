@@ -66,7 +66,7 @@ public class LoginReceptionist extends AppCompatActivity {
     public void btnLoginClick(View view) {
         String s = resname.getText().toString();
         String p = password.getText().toString();
-        String url = "http://192.168.1.115:80/mobileProject/loginres%20.php?rn="+s+"&rp="+p;
+        String url = "http://192.168.1.11:80/mobileProject/loginres.php?rn="+s+"&rp="+p;
         if (ContextCompat.checkSelfPermission(this,
                 Manifest.permission.INTERNET)
                 != PackageManager.PERMISSION_GRANTED) {

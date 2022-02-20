@@ -29,31 +29,67 @@
             android:layout_gravity="center"
             />
 
-        <TextView
-            android:id="@+id/roomId"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:textColor="#000000" />
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/roomCapacity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:text="3"
-            />
+            <TextView
+                style="@style/txtViewStyle"
+                android:layout_marginBottom="0dp"
+                android:layout_gravity="left"
+                android:text="Room ID: "
+                android:layout_margin="0dp">
+            </TextView>
 
-        <TextView
-            android:id="@+id/roomPriceByDay"
+            <TextView
+                android:id="@+id/roomId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:textStyle="bold"
-            />
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/txtViewStyle"
+                android:layout_marginBottom="0dp"
+                android:layout_gravity="left"
+                android:text="Capacity: "
+                android:layout_margin="0dp">
+            </TextView>
+            <TextView
+                android:id="@+id/roomCapacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/txtViewStyle"
+                android:layout_marginBottom="0dp"
+                android:layout_gravity="left"
+                android:text="Price by day: "
+                android:layout_margin="0dp">
+            </TextView>
+            <TextView
+                android:id="@+id/roomPriceByDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
